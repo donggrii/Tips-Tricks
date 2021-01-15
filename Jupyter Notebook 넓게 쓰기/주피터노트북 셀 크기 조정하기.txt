@@ -1,0 +1,11 @@
+<jupyter notebook 의 cell의 가로폭 사이즈 설정하기>
+
+1. cmd 창에서 아래명령으로 jupyter notebook 디렉터리 찾기
+jupyter  --config-dir  
+
+2. 위 폴더에 custom 폴더 생성후 custom.css 파일 생성
+(첨부파일참조)
+
+3. 주피터 노트북 재시작
+
+    
