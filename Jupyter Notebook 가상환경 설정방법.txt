@@ -1,0 +1,30 @@
+<jupyter notebook에 새로운 가상환경 설치 >
+(ex) 
+- "가상환경이름" : "노트북에 나타날 이름"
+- test : test_tensorflow1x
+- tf : tensorflow2
+
+1. 아나콘다에서 가상환경을 만든다
+conda create -n "가상환경이름" python=3.6 ("=" 한개만!)
+
+2. 가상환경 활성화
+activate 가상환경이름
+
+3. 패키지 설치
+- pip install tensorflow
+(만약 tensorflow 1.5버전이라면 , pip install tensorflow==1.5) - uninstall과 같이 실행됨
+- pip install ipykernel
+
+4. jupyternotebook에 가상환경 커널 생성
+python -m ipykernel install --user --name "가상환경이름" --display-name "노트북에 나타날 이름"
+
+(만약 안될경우 가상환경 접속된 상황에서
+conda install jupyter를 해보는 것도 방법)
+
+
+# 참고
+주피터에 뜨는 커널 지우기
+jupyter kernelspec uninstall "커널 이름"
+
+# 가상환경 제거
+conda env remove --name "커널 이름"
